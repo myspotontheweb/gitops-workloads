@@ -1,0 +1,16 @@
+#!/bin/bash
+
+PROMOTE_FROM=${1:-test}
+PROMOTE_TO=${2:-prod}
+
+echo "Promoting from '$PROMOTE_FROM' to '$PROMOTE_TO' ..."
+
+for overlay in $(find apps -name $PROMOTE_FROM )
+do
+   APP=$(basename $(dirname $(dirname $overlay)))
+   DEST_DIR=apps/$APP/overlays/$PROMOTE_TO
+
+   if [ -d $DEST_DIR ]; then
+      cp $overlay/kustomization.yaml $DEST_DIR
+   fi
+done
