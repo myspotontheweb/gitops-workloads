@@ -53,8 +53,8 @@ spec:
       namespace: argocd
     spec:
       destination:
-        namespace: '{{ destNamespace }}'
-        server: '{{ destServer }}'
+        namespace: 'dev'
+        server: 'https://kubernetes.default.svc'
       project: dev
       source:
         path: '{{ srcPath }}'
