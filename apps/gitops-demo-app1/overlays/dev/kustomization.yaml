@@ -4,4 +4,4 @@ resources:
 - ../../base
 images:
 - name: c8n.io/myspotontheweb/gitops-demo-app1
-  newTag: sha-ac3439a
+  newTag: sha-4f6efe4
