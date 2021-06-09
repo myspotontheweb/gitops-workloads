@@ -8,9 +8,13 @@ echo "Promoting from '$PROMOTE_FROM' to '$PROMOTE_TO' ..."
 for overlay in $(find apps -name $PROMOTE_FROM )
 do
    APP=$(basename $(dirname $(dirname $overlay)))
-   DEST_DIR=apps/$APP/overlays/$PROMOTE_TO
 
-   if [ -d $DEST_DIR ]; then
-      cp $overlay/kustomization.yaml $DEST_DIR
+   FROM_FILE=apps/$APP/overlays/$PROMOTE_FROM/kustomization.yaml
+   TO_FILE=apps/$APP/overlays/$PROMOTE_TO/kustomization.yaml
+
+   if [ -f $TO_FILE ]; then
+      echo "Updating image spec in $TO_FILE"
+      yq eval-all --inplace 'select(fi==0).images=select(fi==1).images|select(fi==0)' $TO_FILE $FROM_FILE
    fi
 done
+
