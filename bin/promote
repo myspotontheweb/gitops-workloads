@@ -5,7 +5,7 @@ PROMOTE_TO=${2:-prod}
 
 echo "Promoting from '$PROMOTE_FROM' to '$PROMOTE_TO' ..."
 
-for overlay in $(find apps -name $PROMOTE_FROM )
+for overlay in $(find apps/*/overlays -name $PROMOTE_FROM -type d )
 do
    APP=$(basename $(dirname $(dirname $overlay)))
 
