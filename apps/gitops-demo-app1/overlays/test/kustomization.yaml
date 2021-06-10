@@ -5,5 +5,3 @@ resources:
 images:
 - name: c8n.io/moconnorglobalizationpartnerscom/gitops-demo-app1
   newTag: v1.2.9
-- name: c8n.io/myspotontheweb/gitops-demo-app1
-  newTag: v1.2.8

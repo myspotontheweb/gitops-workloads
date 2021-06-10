@@ -5,5 +5,3 @@ resources:
 images:
 - name: c8n.io/moconnorglobalizationpartnerscom/gitops-demo-app1
   newTag: sha-68ff12d
-- name: c8n.io/myspotontheweb/gitops-demo-app1
-  newTag: sha-4f6efe4
