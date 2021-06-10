@@ -4,7 +4,7 @@ resources:
   - ../../base
 images:
   - name: c8n.io/moconnorglobalizationpartnerscom/gitops-demo-app1
-    newTag: v1.2.9
+    newTag: v1.2.10
 replicas:
   - name: gitops-demo-app1
     count: 5
