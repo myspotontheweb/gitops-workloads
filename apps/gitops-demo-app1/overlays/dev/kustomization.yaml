@@ -1,7 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ../../base
+  - ../../base
 images:
-- name: c8n.io/moconnorglobalizationpartnerscom/gitops-demo-app1
-  newTag: sha-1c2ae7c
+  - name: c8n.io/moconnorglobalizationpartnerscom/gitops-demo-app1
+    newTag: sha-1c2ae7c
+patchesStrategicMerge:
+  - set-pod-resources.yaml

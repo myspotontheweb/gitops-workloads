@@ -8,3 +8,5 @@ images:
 replicas:
 - count: 2
   name: gitops-demo-app3
+patchesStrategicMerge:
+  - set-pod-resources.yaml
