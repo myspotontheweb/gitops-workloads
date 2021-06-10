@@ -4,4 +4,4 @@ resources:
 - ../../base
 images:
 - name: c8n.io/moconnorglobalizationpartnerscom/gitops-demo-app3
-  newTag: sha-129655a
+  newTag: sha-e101bad
