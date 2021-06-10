@@ -1,7 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ../../base
+  - ../../base
 images:
-- name: c8n.io/moconnorglobalizationpartnerscom/gitops-demo-app1
-  newTag: v1.2.9
+  - name: c8n.io/moconnorglobalizationpartnerscom/gitops-demo-app1
+    newTag: v1.2.9
+replicas:
+  - name: gitops-demo-app1
+    count: 2
+

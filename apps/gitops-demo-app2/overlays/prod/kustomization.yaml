@@ -5,3 +5,6 @@ resources:
 images:
   - name: c8n.io/moconnorglobalizationpartnerscom/gitops-demo-app2
     newTag: v1.0.5
+replicas:
+  - name: gitops-demo-app2
+    count: 5
