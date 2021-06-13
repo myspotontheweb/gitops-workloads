@@ -14,7 +14,7 @@ do
 
    if [ -f $TO_FILE ]; then
       echo "Updating image spec in $TO_FILE"
-      yq eval-all --inplace 'select(fi==0).images=select(fi==1).images|select(fi==0)' $TO_FILE $FROM_FILE
+      yq eval-all --inplace 'select(fi==0).images[0]=select(fi==1).images[0]|select(fi==0)' $TO_FILE $FROM_FILE
    fi
 done
 
