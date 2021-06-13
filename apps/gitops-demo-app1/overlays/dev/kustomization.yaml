@@ -6,6 +6,6 @@ images:
 - name: c8n.io/moconnorglobalizationpartnerscom/gitops-demo-app1
   newTag: sha-1c2ae7c
 - name: myspotontheweb/gitops-demo-app1
-  newTag: sha-98bcb62
+  newTag: sha-b4aa7fc
 patchesStrategicMerge:
 - set-pod-resources.yaml
