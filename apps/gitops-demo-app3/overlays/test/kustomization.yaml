@@ -6,7 +6,7 @@ images:
 - name: myspotontheweb/gitops-demo-app3
   newTag: v1.2.0
 replicas:
-- count: 2
+- count: 1
   name: gitops-demo-app3
 patchesStrategicMerge:
 - set-pod-resources.yaml
