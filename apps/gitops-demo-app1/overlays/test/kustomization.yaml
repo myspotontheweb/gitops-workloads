@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 - ../../base
 images:
-- name: c8n.io/moconnorglobalizationpartnerscom/gitops-demo-app1
+- name: myspotontheweb/gitops-demo-app1
   newTag: v1.2.10
 replicas:
 - count: 2
