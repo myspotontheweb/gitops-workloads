@@ -3,8 +3,6 @@ kind: Kustomization
 resources:
 - ../../base
 images:
-- name: c8n.io/moconnorglobalizationpartnerscom/gitops-demo-app3
-  newTag: sha-e101bad
 - name: myspotontheweb/gitops-demo-app3
   newTag: sha-75b16dc
 patchesStrategicMerge:
