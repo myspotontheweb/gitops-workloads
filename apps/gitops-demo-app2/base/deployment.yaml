@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: gitops-demo-app2
-          image: "c8n.io/moconnorglobalizationpartnerscom/gitops-demo-app2:main"
+          image: "myspotontheweb/gitops-demo-app2:main"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
