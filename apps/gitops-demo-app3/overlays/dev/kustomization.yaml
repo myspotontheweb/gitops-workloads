@@ -4,6 +4,6 @@ resources:
 - ../../base
 images:
 - name: myspotontheweb/gitops-demo-app3
-  newTag: sha-75b16dc
+  newTag: sha-a1b3b9a
 patchesStrategicMerge:
 - set-pod-resources.yaml
