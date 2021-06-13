@@ -33,5 +33,3 @@ spec:
             httpGet:
               path: /
               port: http
-      imagePullSecrets:
-      - name: regcred
